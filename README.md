@@ -4,7 +4,9 @@ A from-scratch PyTorch implementation of **StyleGAN v1**, trained on Kaggle usin
 
 ## Results
 
-[StyleGAN Generated Samples](https://chatgpt.com/c/assets/stylegan-preview.png)
+<p style="text-align: center;">
+  <img src="stylegan.png" width="70%">
+</p>
 
 **Training Progress:** [Watch the video](https://chatgpt.com/c/output.mp4)
 
