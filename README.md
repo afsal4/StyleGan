@@ -10,6 +10,17 @@ A from-scratch PyTorch implementation of **StyleGAN v1**, trained on Kaggle usin
 
 **Training Progress:** [Watch the video](https://chatgpt.com/c/output.mp4)
 
+### FID Score
+
+Achieved an amazing improvement in FID score, from **[STARTING_FID]** down to **0.173**.
+
+## Model Architecture
+
+* **Mapping Network:** maps the input latent vector `z` to an intermediate latent space `w`, which controls style at each resolution via AdaIN.
+* **Synthesis Network:** progressively grown generator, starting at 4×4 and growing up to 512×512, with learned constant input, noise injection at every block, and style modulation (AdaIN) driven by `w`.
+* **Discriminator:** mirrors the generator's progressive growing structure, with minibatch standard deviation for diversity and a matching fade-in schedule for new layers.
+* **Progressive Growing:** both generator and discriminator grow in resolution together, with alpha-blended fade-in transitions between resolution stages to stabilize training.
+
 ## Features
 
 * Progressive growing from 4×4 up to 512×512 resolution.
@@ -33,9 +44,9 @@ Run training on a machine with 2 available GPUs:
 torchrun --standalone --nproc_per_node=2 train.py
 ```
 
-The model was trained on Kaggle. You can view the notebook here:
+The model was trained on Kaggle. You can view the notebook and access the model weights and outputs here:
 
-[**Kaggle Notebook**](https://chatgpt.com/c/YOUR_KAGGLE_NOTEBOOK_URL)
+[**Kaggle Notebook**](https://www.kaggle.com/code/afsalali/stylegan)
 
 ## Model Weights & Inference
 
