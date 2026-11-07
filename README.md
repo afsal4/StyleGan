@@ -4,11 +4,24 @@ A from-scratch PyTorch implementation of **StyleGAN v1**, trained on Kaggle usin
 
 ## Results
 
-<p style="text-align: center;">
+<p align="center">
   <img src="stylegan.png" width="70%">
 </p>
 
-**Training Progress:** [Watch the video](https://chatgpt.com/c/output.mp4)
+### Training Progress
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <video src="stylegan_train_progress.mp4" width="100%" controls muted></video>
+      <br><sub><b>Fixed latent</b><br>Same latent vector tracked across training</sub>
+    </td>
+    <td align="center">
+      <video src="stylegan_train_progress_fixed.mp4" width="100%" controls muted></video>
+      <br><sub><b>Random samples</b><br>New latent vectors at each snapshot</sub>
+    </td>
+  </tr>
+</table>
 
 ### FID Score
 
