@@ -4,7 +4,7 @@ A from-scratch PyTorch implementation of **StyleGAN v1**, trained on Kaggle usin
 
 ## Results
 
-<p>
+<p align="center">
   <img src="stylegan.png" width="70%">
 </p>
 
