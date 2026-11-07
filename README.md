@@ -13,11 +13,11 @@ A from-scratch PyTorch implementation of **StyleGAN v1**, trained on Kaggle usin
 <table align="center">
   <tr>
     <td align="center">
-      <video src="stylegan_train_progress.mp4" width="100%" controls muted></video>
+      <video src="https://github.com/afsal4/StyleGan/blob/main/stylegan_train_progress.mp4" width="100%" controls muted></video>
       <br><sub><b>Fixed latent</b><br>Same latent vector tracked across training</sub>
     </td>
     <td align="center">
-      <video src="stylegan_train_progress_fixed.mp4" width="100%" controls muted></video>
+      <video src="https://github.com/afsal4/StyleGan/blob/main/stylegan_train_progress_fixed.mp4" width="100%" controls muted></video>
       <br><sub><b>Random samples</b><br>New latent vectors at each snapshot</sub>
     </td>
   </tr>
