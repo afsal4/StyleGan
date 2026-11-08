@@ -29,7 +29,7 @@ A from-scratch PyTorch implementation of **StyleGAN v1**, trained on Kaggle usin
 
 ### FID Score
 
-Achieved an amazing improvement in FID score, from **[STARTING_FID]** down to **0.173**.
+Achieved an amazing improvement in FID score, from **2.53** down to **0.153** (lower is better).
 
 ## Model Architecture
 
